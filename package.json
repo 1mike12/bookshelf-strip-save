@@ -1,0 +1,31 @@
+{
+  "name": "bookshelf-strip-save",
+  "version": "1.0.0",
+  "description": "Strip extraneous model attributes and avoid \"column doesn't exist\" errors when saving in Bookshelf.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1mike12/bookshelf-strip-save"
+  },
+  "keywords": [
+    "bookshelf",
+    "orm",
+    "strip-save"
+  ],
+  "author": {
+    "name": "Mike Qin"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1mike12/bookshelf-strip-save/issues"
+  },
+  "scripts": {
+  },
+  "homepage": "https://github.com/1mike12/bookshelf-strip-save",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "lodash": "^4.14.1"
+  },
+  "devDependencies": {
+  }
+}
