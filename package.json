@@ -27,5 +27,6 @@
     "lodash": "^4.14.1"
   },
   "devDependencies": {
-  }
+  },
+  "readmeFilename": "README.md"
 }
