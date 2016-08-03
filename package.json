@@ -1,7 +1,7 @@
 {
   "name": "bookshelf-strip-save",
-  "version": "1.0.0",
-  "description": "Strip extraneous model attributes and avoid \"column doesn't exist\" errors when saving in Bookshelf.js",
+  "version": "1.0.1",
+  "description": "Avoid column doesn't exist errors when saving in Bookshelf.js",
   "main": "index.js",
   "repository": {
     "type": "git",
