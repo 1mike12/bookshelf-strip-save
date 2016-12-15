@@ -1,16 +1,15 @@
 var _ = require("lodash");
 var Promise = require('bluebird');
-var HashSet = require("native-hashset");
 
 var table_columnNames = new Map();
-var tablesQueried = new HashSet.String();
+var tablesQueried = {};
 var tableName_resolvers = new Map();
 
 function getColumnsForTable(Bookshelf, tableName){
     var knex = Bookshelf.knex;
 
-    if (!tablesQueried.contains(tableName)) {
-        tablesQueried.add(tableName);
+    if (!tablesQueried[tableName]) {
+        tablesQueried[tableName] = true;
         tableName_resolvers.set(tableName, []);
 
         return knex(tableName)
