@@ -129,6 +129,13 @@ bluebird@^3.4.3, bluebird@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
+bookshelf-column-cache@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/bookshelf-column-cache/-/bookshelf-column-cache-1.0.1.tgz#54963b23ab488fe4bac92bba21715d00e168279b"
+  dependencies:
+    bookshelf "^0.13.3"
+    knex "^0.15.2"
+
 bookshelf@^0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/bookshelf/-/bookshelf-0.13.3.tgz#aa73d9159b6cac92830dc1ff37325490c3c6dfba"

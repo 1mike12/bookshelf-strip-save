@@ -1,4 +1,4 @@
-const knexFile = require("../knexFile");
+const knexFile = require("./knexFile");
 const knex = require('knex')(knexFile[process.env.NODE_ENV]);
 const bookshelf = require("bookshelf")(knex);
 bookshelf.plugin(require("../index"));

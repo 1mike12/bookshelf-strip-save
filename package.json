@@ -23,6 +23,7 @@
   "homepage": "https://github.com/1mike12/bookshelf-strip-save",
   "dependencies": {
     "bookshelf": "^0.13.3",
+    "bookshelf-column-cache": "^1.0.1",
     "knex": "^0.15.2"
   },
   "devDependencies": {

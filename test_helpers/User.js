@@ -1,4 +1,4 @@
-const bookshelf = require("./database").bookshelf;
+const bookshelf = require("../test_helpers/database").bookshelf;
 
 class User extends bookshelf.Model {
 
