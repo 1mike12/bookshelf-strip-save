@@ -1,21 +1,20 @@
 # Bookshelf Strip Save
 
 This plugin works with Bookshelf.js, available here http://bookshelfjs.org. This plugin will automatically strip
-any attributes set on an object that's not the name of a column before it is saved.
-This is useful for example if you are receiving "dirty" data from apis where the json will have
-superflous data that you don't need to save with your models.
+any attributes set on a model that's not the name of a column of its associated table before it's saved.
+This is useful for example if you are receiving "dirty" data.
 
-It does this by checking the database
-for all the valid column names for a given table. This saves you the trouble from having to keep a whitelist of allowed attributes
-and manually having to remember to modify the list for each model when you make changes to the schema.
+It does this by relying on `bookshelf-column-cache` to check for a whitelist of valid column names.
 
+requires async syntax to work.
 
 ## Installation
-```
-    npm install bookshelf-strip-save
+``` javascript
+npm install bookshelf-strip-save bookshelf-column-cache
 ```
 Then in your bookshelf configuration:
-```
-    var bookshelf = require('bookshelf')(knex);
-    bookshelf.plugin(require('bookshelf-strip-save');
+``` javascript
+var bookshelf = require('bookshelf')(knex);
+bookshelf.plugin(require('bookshelf-strip-save');
+bookshelf.plugin(require('bookshelf-column-cache');
 ```

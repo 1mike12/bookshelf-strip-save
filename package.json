@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-strip-save",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Avoid column doesn't exist errors when saving in Bookshelf.js",
   "main": "index.js",
   "repository": {
@@ -22,13 +22,13 @@
   "scripts": {},
   "homepage": "https://github.com/1mike12/bookshelf-strip-save",
   "dependencies": {
-    "bookshelf": "^0.13.3",
-    "bookshelf-column-cache": "^1.0.1",
-    "knex": "^0.15.2"
+    "lodash": "^4.14.1"
   },
   "devDependencies": {
+    "knex": "^0.15.2",
+    "bookshelf": "^0.13.3",
+    "bookshelf-column-cache": "^1.0.1",
     "chai": "^4.1.2",
-    "lodash": "^4.14.1",
     "mocha": "^5.2.0",
     "sqlite3": "^4.0.2"
   },

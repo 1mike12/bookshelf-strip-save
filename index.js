@@ -27,7 +27,7 @@ module.exports = function(Bookshelf){
 
             const tableName = this.constructor.prototype.tableName;
             let columnsSet = await ColumnCache.getColumnsForTable(tableName);
-            stripExtraneousAttributes(columnSet, self.attributes);
+            stripExtraneousAttributes(columnsSet, self.attributes);
             return proto.save.call(self, attrs, options);
         }
     })
